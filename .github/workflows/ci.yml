@@ -1,4 +1,4 @@
-name: CI 
+name: CI
  
 on: 
   push: 
@@ -27,7 +27,7 @@ jobs:
       uses: actions/upload-artifact@v3 
       with: 
         name: build-artifacts
-         path: build/libs/** 
+        path: build/libs/**  # corrected indentation
  
     - name: Run Unit Test 
       run: gradle test 
@@ -37,6 +37,7 @@ jobs:
       with: 
         name: test-reports 
         path: build/reports/tests/** 
+         
     - name: Generate code coverage report 
       run: gradle jacocoTestReport 
  
