@@ -3,7 +3,7 @@ agent any
 stages {
       stage('Checkout') {
 steps {
-git branch: 'master', url: 'https://github.com/EddieFangwuwuwuwu/hello-worldjava1.git'
+git branch: 'master', url: 'https://github.com/EddieFangwuwuwuwu/hello-world-java1'
 }
      }
 stage('Build') {
